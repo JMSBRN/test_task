@@ -1,0 +1,218 @@
+
+:root {
+    --gray-900-color: rgba(35, 31, 32, 1);
+    --gray-800-color: rgba(42, 43, 48, 1);
+    --gray-700-color: rgba(61, 64, 80, 1);
+    --gray-500-color: rgba(111, 109, 123, 1);
+    --gray-400-color: rgba(187, 187, 187, 1);
+    --gray-300-color: rgba(196, 196, 196, 1);
+    --gray-250-color: rgba(195, 195, 195, 1);
+    --dark-900-color: rgba(0, 0, 0, 1);
+    --dark-700-color: rgba(39, 39, 51, 1);
+    --dark-800-color: rgba(16, 16, 29, 0.9);
+    --blue-900-color: rgba(40, 102, 144, 1);
+    --blue-800-color: rgba(62, 156, 220, 1);
+    --blue-700-color: rgba(67, 171, 240, 1);
+    --blue-600-color: rgba(66, 169, 237, 1);
+    --light-color: rgba(255, 255, 255, 1);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+}
+.main_container {
+    max-width: 1920px;
+    max-height: 1848;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--dark-700-color);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+.header__logo span {
+    color: var(--blue-600-color);
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--light-color)
+}
+.header__nav .active {
+    color: var(--blue-600-color)
+}
+
+.main-content {
+    background: url('../images/background-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    color: var(--dark-900-color);
+    padding-left: 300px;
+}
+.main-content__title {
+  text-align: start;
+}
+.main-content__title span {
+   color: var(--blue-700-color)
+}
+.main-content__title span:nth-child(2), span:nth-child(4) {
+   color: var(--dark-800-color)
+}
+
+.main-content__subtitle {
+    text-align: start;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.main-content__list {
+    text-align: start;
+    list-style: none;
+    padding: 0;
+}
+
+.main-content__list-item {
+    margin: 10px 0;
+}
+
+.main-content__buttons {
+    text-align: start;
+    margin-top: 60px;
+}
+.main-content__buttons a:last-child {
+   background-color: var(--light-color);
+   color: var(--dark-900-color);
+   border: 1px solid;
+   border-color: var(--dark-900-color);
+}
+
+.main-content__button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: var(--light-color);
+    border-radius: 5px;
+}
+
+.main-content__button--primary {
+    background-color: var(--blue-600-color);
+}
+
+.main-content__button--secondary {
+    background-color: var(--blue-800-color);
+}
+
+.order-section {
+    background-color: var(--dark-800-color);
+    color: var(--light-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.order-section__title {
+    color: var(--light-color);
+}
+.order-section__title span {
+    color: var(--blue-600-color);
+}
+
+.order-section__subtitle {
+    margin-bottom: 20px;
+}
+.order-section__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-section__link {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    margin: 0 30px;
+    font-size: 13px;
+}
+.order-section__link-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: var(--blue-600-color)
+}
+.order-section__form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.order-section__form form {
+   max-width: 80%;
+   display: grid;
+   gap: 20px;
+   height: 400px;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.order-section__label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.order-section__select,
+.order-section__input,
+.order-section__range,
+.order-section__file-input,
+.order-section__button {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-900-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__text {
+    margin: 0;
+}
+
+.footer__links {
+    margin: 10px 0 0;
+}
+
+.footer__link {
+    color: var(--blue-700-color);
+    text-decoration: none;
+}
