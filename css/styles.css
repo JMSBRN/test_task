@@ -127,7 +127,7 @@
       hue-rotate(188deg) brightness(91%) contrast(90%);
   }
   .main-content {
-    background-image: url("../assets/images/background-image.webp");
+    background-image: url("../assets/images/background-image-light.webp");
   }
   .order-section__links {
     width: 0;
