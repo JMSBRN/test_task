@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="main__container">
+    <section class="header">
         <div class="header__container">
             <a href="#" class="header__logo">LOREMIPSUM<span>.NET</span></a>
             <nav class="header__nav">
               <a href="#" class="header__link active">БИЗНЕС</a>
               <a href="#" class="header__link">О НАС</a>
               <a href="#" class="header__link">ЦЕНЫ</a>
-              <a href="#" class="header__link">ОФОРМИТЬ ЗАКАЗ</a>
-            </nav>
+            <a href="#" class="header__link">ОФОРМИТЬ ЗАКАЗ</a>
+          </nav>
         </div>
-    </div>
-
-    <div class="main-content">
+    </section>
+    <section class="main-content">
         <div class="main-content__container">
             <h1 class="main-content__title">
                 <span>LOREM IPSUM</span>
@@ -49,9 +49,8 @@
              </div>
         </div>
      
-    </div>
-
-    <div class="order-section">
+    </section>
+    <section class="order-section">
       <div class="order-section__container">
       <div class="order-section__title">ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></div>
       <p class="order-section__subtitle">
@@ -85,16 +84,16 @@
           </div>
           <p class="order-section__link-text">Lorem ipsum dolor sit.</p>
         </div>
-        <img class="order-section__dots" src="./assets/icons/dots.png" alt="dots"/>
-        <div class="order-section__link">
-          <div class="order-section__link-img">
-            <img src="./assets/icons/money_icon.png" alt="">
-          </div>
-          <p class="order-section__link-text">Lorem ipsum dolor sit.</p>
-        </div>
+      <img class="order-section__dots" src="./assets/icons/dots.png" alt="dots"/>
+    <div class="order-section__link">
+      <div class="order-section__link-img">
+        <img src="./assets/icons/money_icon.png" alt="">
       </div>
-      <div class="order-section__form__wrapper">
-        <form  class="order-section-form" action="#" method="post">
+    <p class="order-section__link-text">Lorem ipsum dolor sit.</p>
+  </div>
+</div>
+<div class="order-section__form__wrapper">
+  <form  class="order-section-form" action="#" method="post">
             <select
               id="system-type"
               name="system-type"
@@ -150,9 +149,8 @@
         </form>
       </div>
       </div>
-    </div>
-
-    <div class="footer">
+    </section>
+    <section class="footer">
       <p class="footer__text">
         &copy; 2018 LOREMIPSUM.NET. Все права защищены.
       </p>
@@ -171,6 +169,7 @@
         <a href="#" class="footer__link">
             <img src="./assets/icons/footer_icon_vk.png" alt="">
             Мы в контакте</a>
-    </div>
+    </section>
+  </div>
   </body>
 </html>

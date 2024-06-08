@@ -14,19 +14,49 @@
     --color-blue-700: rgba(67, 171, 240, 1);
     --color-blue-600: rgba(66, 169, 237, 1);
     --color-light: rgba(255, 255, 255, 1);
-    --size-base: 16px;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        font-size: 12px;
+    }
 }
 
 html {
-    font-size: var(--size-base);
+font-family: Lato, sans-serif;
 }
 
 body {
-    font-family: Lato, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--color-light);
+}
+
+.main__container {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 100vh;
+    overflow: hidden;
+
 }
 
 .header {
@@ -98,7 +128,6 @@ body {
 .main-content__title {
     text-align: start;
     font-size: 3.1875rem;
-    letter-spacing: -1.9px;
 }
 
 .main-content__title span {
@@ -111,21 +140,22 @@ span:nth-child(4) {
 }
 
 .main-content__subtitle {
+    font-family: Lato, sans-serif;
     margin-top: 85px;
     text-align: start;
-    font-size: 1.33rem;
-    font-weight: 750;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .main-content__list {
     width: 100%;
     text-align: start;
     list-style: none;
-}
-
-.main-content__list-item {
-    font-size: 1.35rem;
-    font-weight: 400;
+    }
+    
+    .main-content__list-item {
+    font-family: Lato, sans-serif;
+    font-size: 1.25rem;
     color: var(--color-dark-900);
 }
 
@@ -216,12 +246,12 @@ span:nth-child(4) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .order-section__link-img {
-    width: 90px;
-    height: 90px;
+    width: 5.62rem;
+    height: 5.62rem;
     margin-bottom: 7px;
     border: 7px solid;
     border-color: var(--color-blue-900);
@@ -249,7 +279,7 @@ span:nth-child(4) {
 }
 
 .order-section-form select, input {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 0 10px;
     border-radius: 5px;
 }
@@ -320,7 +350,7 @@ span:nth-child(4) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .order-section-form__label_file {
     margin-top: 10px;
