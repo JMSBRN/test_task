@@ -17,6 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', hideModal);
     window.addEventListener('scroll', hideModal);
 
+    document.querySelectorAll('.header__link').forEach(item => {
+        item.addEventListener('click', event => {
+            // Remove "active" class from all header__link elements
+            document.querySelectorAll('.header__link').forEach(link => {
+                link.classList.remove('active');
+            });
+    
+            // Add "active" class to the clicked element
+            item.classList.add('active');
+        });
+    });
+
     if (document.querySelector('.customer-reviews')) {
         // Slider dragging
         const slider = document.querySelector('.customer-reviews');
